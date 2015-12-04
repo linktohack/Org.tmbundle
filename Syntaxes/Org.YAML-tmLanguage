@@ -127,7 +127,7 @@ patterns:
   patterns:
   - include: source.shell
 - name: meta.block.source.fortran.modern.orgmode
-  begin: '(?i)#\+(BEGIN_SRC)\s+(f90)\s*(.*)$'
+  begin: '(?i)#\+(BEGIN_SRC)\s+(fortran|f90)\s*(.*)$'
   end: '(?i)#\+(END_SRC)$'
   beginCaptures:
     '1': {name: keyword.control.block.orgmode}
